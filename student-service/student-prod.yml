@@ -1,2 +1,4 @@
 env:
   name: WOW WOW
+server:
+  port: 9999
