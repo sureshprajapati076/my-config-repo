@@ -1,0 +1,10 @@
+eureka:
+  client:
+    healthcheck:
+      enabled: false
+    serviceUrl:
+      defaultZone: http://internal-eureka-alb-1059710395.us-east-1.elb.amazonaws.com/eureka/
+  instance:
+    leaseExpirationDurationInSeconds: 123
+    leaseRenewalIntervalInSeconds: 28
+    prefer-ip-address: true
