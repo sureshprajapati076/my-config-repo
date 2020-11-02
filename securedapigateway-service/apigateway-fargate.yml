@@ -5,7 +5,7 @@ eureka:
     register-with-eureka: false
     fetch-registry: true
     serviceUrl:
-      defaultZone: http://internal-EUREKA-ALB-1566850549.us-east-1.elb.amazonaws.com/eureka     
+      defaultZone: http://internal-eureka-alb-855275354.us-east-1.elb.amazonaws.com/eureka/
 zuul:
   routes:
     studentservice:
