@@ -1,12 +1,2 @@
-eureka:
-  client:
-    healthcheck:
-      enabled: true
-    serviceUrl:
-      defaultZone: ${EUREKA_DEFAULT_ZONE}
-  instance:
-    leaseExpirationDurationInSeconds: 1
-    leaseRenewalIntervalInSeconds: 28
-    prefer-ip-address: true
 env:
   name: This message is from github repo fargate profile

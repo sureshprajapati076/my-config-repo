@@ -1,4 +1,2 @@
-eureka:
-  client:
-    register-with-eureka: false
-    fetch-registry: false
+env:
+  name: fargate env
