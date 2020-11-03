@@ -1,5 +1,7 @@
 jwt:
   secret: MY-Secret-Key
+sample:
+  value: modified value to test
 eureka:
   client:
     register-with-eureka: false
