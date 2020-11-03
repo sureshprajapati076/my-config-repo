@@ -3,7 +3,7 @@ eureka:
     healthcheck:
       enabled: true
     serviceUrl:
-      defaultZone: http://internal-eureka-alb-2130723764.us-east-1.elb.amazonaws.com/eureka/
+      defaultZone: http://internal-eureka-alb-2115340972.us-east-1.elb.amazonaws.com/eureka/
   instance:
     leaseExpirationDurationInSeconds: 1
     leaseRenewalIntervalInSeconds: 28
