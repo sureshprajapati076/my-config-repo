@@ -1,5 +1,5 @@
 env:
-  name: This is from github repo with fargate profile
+  name: This is from github repo with fargate profile for address service
 eureka:
   client:
     healthcheck:
