@@ -1,0 +1,60 @@
+{
+  "apiName": "ORDER-SERVICE",
+  "accessPolicies": [
+    {
+      "api": [
+        {
+          "url": "/order/makeorder",
+          "httpMethod": "GET"
+        }
+      ],
+      "allowedRoles": [
+        "CUSTOMER",
+        "ADMIN"
+      ],
+      "publicApi": false
+    },
+    {
+      "api": [
+        {
+          "url": "/order/place/order1",
+          "httpMethod": "GET"
+        },
+        {
+          "url": "/order/place/order3",
+          "httpMethod": "GET"
+        },
+        {
+          "url": "/order/place/order3",
+          "httpMethod": "POST"
+        }
+      ],
+      "allowedRoles": [
+        "DEMOTED_USER"
+      ],
+      "publicApi": false
+    },
+    {
+      "api": [
+        {
+          "url": "/order/place/order2",
+          "httpMethod": "GET"
+        }
+      ],
+      "publicApi": false
+    },
+    {
+      "api": [
+        {
+          "url": "/order/public/place/order4",
+          "httpMethod": "GET"
+        },
+        {
+          "url": "/order/public/place/order5",
+          "httpMethod": "GET"
+        }
+      ],
+      "publicApi": true
+    }
+  ]
+}

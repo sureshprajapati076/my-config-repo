@@ -1,0 +1,39 @@
+{
+  "apiName": "PAYMENT-SERVICE",
+  "accessPolicies": [
+    {
+      "api": [
+        {
+          "url": "/payment/payment1",
+          "httpMethod": "GET"
+        },
+        {
+          "url": "/payment/payment3",
+          "httpMethod": "GET"
+        }
+
+      ],
+      "allowedRoles": ["VISITOR","ADMIN"],
+      "publicApi": false
+    },
+    {
+      "api": [
+        {
+          "url": "/payment/payment2",
+          "httpMethod": "GET"
+        }
+      ],
+      "allowedRoles": ["VISITOR","COSTCO"],
+      "publicApi": false
+    },
+    {
+      "api": [
+        {
+          "url": "/payment/public/endpoint",
+          "httpMethod": "GET"
+        }
+      ],
+      "publicApi": true
+    }
+  ]
+}
