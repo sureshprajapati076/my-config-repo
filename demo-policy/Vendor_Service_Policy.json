@@ -1,0 +1,35 @@
+{
+  "apiName": "VENDOR-SERVICE",
+  "accessPolicies": [
+    {
+      "api": [
+        {
+          "url": "/vendor/get",
+          "httpMethod": "GET"
+        }
+      ],
+      "publicApi": true
+    },
+    {
+      "api": [
+        {
+          "url": "/vendor/put",
+          "httpMethod": "PUT"
+        }
+      ],
+      "publicApi": false
+    },
+    {
+      "api": [
+        {
+          "url": "/vendor/post",
+          "httpMethod": "POST"
+        }
+      ],
+      "allowedRoles":[
+        "VENDOR_ADMIN"
+      ],
+      "publicApi": false
+    }
+  ]
+}
