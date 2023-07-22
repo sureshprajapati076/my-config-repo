@@ -4,15 +4,6 @@
     {
       "api": [
         {
-          "url": "/auth/invalidate",
-          "httpMethod": "PUT"
-        }
-      ],
-      "publicApi": false
-    },
-    {
-      "api": [
-        {
           "url": "/auth/register",
           "httpMethod": "POST"
         },
@@ -26,6 +17,14 @@
         },
         {
           "url": "/auth/validate/roles",
+          "httpMethod": "GET"
+        },
+        {
+          "url": "/auth/invalidate",
+          "httpMethod": "PUT"
+        },
+        {
+          "url": "/auth/refresh",
           "httpMethod": "GET"
         }
       ],
