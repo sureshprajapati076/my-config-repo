@@ -1,0 +1,30 @@
+{
+  "apiName": "REST-CLIENT-SERVICE",
+  "accessPolicies": [
+    {
+      "api": [
+        {
+          "url": "/randomuser",
+          "httpMethod": "GET"
+        },
+        {
+          "url": "/generic/call",
+          "httpMethod": "GET"
+        },
+        {
+          "url": "/try/allservices/atonce",
+          "httpMethod": "GET"
+        },
+        {
+          "url": "/try/allservices/atonce/async",
+          "httpMethod": "GET"
+        },
+        {
+          "url": "/try/refresh/scope/demo",
+          "httpMethod": "GET"
+        }
+      ],
+      "publicApi": true
+    }
+  ]
+}
