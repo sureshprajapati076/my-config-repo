@@ -1,0 +1,5 @@
+#file: noinspection undefined
+logging:
+  level:
+    root: ERROR
+    com.praja.orderservice: DEBUG

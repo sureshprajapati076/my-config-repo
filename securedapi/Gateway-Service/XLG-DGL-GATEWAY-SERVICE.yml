@@ -1,0 +1,57 @@
+#file: noinspection undefined
+spring:
+  main:
+    web-application-type: reactive
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: identity-service
+#          uri: lb://IDENTITY-SERVICE
+#          predicates:
+#            - Path=/auth/**
+#        - id: order-service
+#          uri: lb://ORDER-SERVICE
+#          predicates:
+#            - Path=/order/**
+#          filters:
+#            - AuthenticationFilter
+#        - id: payment-service
+#          uri: lb://PAYMENT-SERVICE
+#          predicates:
+#            - Path=/payment/payments
+#          filters:
+#            - RoleAuth=CUSTOMER
+#        - id: payment-service-1
+#          uri: lb://PAYMENT-SERVICE
+#          predicates:
+#            - Path=/payment/payments1
+#          filters:
+#            - RoleAuth=ADMIN
+#        - uri: lb://PAYMENT-SERVICE
+#          predicates:
+#            - Path=/payment/test,/payment/buy
+#        - uri: lb://PAYMENT-SERVICE
+#          predicates:
+#            - Path=/payment/sent
+
+# http://localhost:8888/actuator/gateway/routes
+
+management:
+  endpoint:
+    gateway:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "*"
+---
+config:
+  server:
+    host: XLG-DGL-CONFIG-SERVICE
+    uri: /demo/default/master/{jsonFile}
+policy:
+  files: Payment_Service_Policy.json,Order_Service_Policy.json, Identity_Service_Policy.json, sdfsdf.json, sfsf.json, Products_Service_Policy.json, Rest_Client_Service_Policy.json
+# sdfsdf.json is intentionally added to test if file is not present in config server if it is handled correctly or not
+# similarly space can be added or removed as above example
