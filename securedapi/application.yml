@@ -8,3 +8,14 @@ eureka:
   instance:
     hostname: localhost
     prefer-ip-address: false
+
+#Actuator configurations
+management:
+  endpoint:
+    gateway:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "*"
