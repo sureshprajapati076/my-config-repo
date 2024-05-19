@@ -5,9 +5,6 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://host.docker.internal:8761/eureka/
-  instance:
-    hostname: ${spring.application.name}
-    prefer-ip-address: true
 
 #Actuator configurations
 management:
