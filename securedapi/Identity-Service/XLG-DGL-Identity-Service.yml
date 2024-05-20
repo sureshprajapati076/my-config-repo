@@ -1,8 +1,0 @@
-#file: noinspection undefined
-auth:
-  service:
-    test: IN-MEMORY #MONGODB #
-spring:
-  data:
-    mongodb:
-      uri: mongodb+srv://api-test:api-test@cluster1.ssk95tn.mongodb.net/test-users?retryWrites=true&w=majority

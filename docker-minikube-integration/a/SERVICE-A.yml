@@ -1,0 +1,41 @@
+resilience4j
+  timelimiter
+    configs
+      default
+        timeoutDuration 60s
+        cancelRunningFuture true
+    instances
+      serviceb
+        timeoutDuration 25s
+  thread-pool-bulkhead
+    configs
+      default
+        maxThreadPoolSize 150
+        coreThreadPoolSize 50
+        queueCapacity 10
+    instances
+      serviceb
+        maxThreadPoolSize 150
+        coreThreadPoolSize 50
+        queueCapacity 10
+  circuitbreaker
+    configs
+      default
+        waitDurationInOpenState 500
+        minimumNumberOfCalls 100
+        failureRateThreshold 90
+    instances
+      serviceb
+        waitDurationInOpenState 500
+        minimumNumberOfCalls 100
+        failureRateThreshold 90
+  retry
+    instances
+      serviceb
+        maxAttempts 8
+        waitDuration 1s
+        resultPredicate com.server.a.predicate.MyPredicate
+        retryExceptions
+          - java.lang.RuntimeException
+          - org.springframework.web.client.HttpServerErrorException
+          - org.springframework.web.client.HttpClientErrorException

@@ -1,4 +1,0 @@
-eureka:
-  client:
-    register-with-eureka: testing
-    fetch-registry: testing
