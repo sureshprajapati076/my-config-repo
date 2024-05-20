@@ -4,10 +4,10 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:8761/eureka/
-  instance:
-    hostname: localhost
-    prefer-ip-address: false
+      defaultZone: http://host.docker.internal:8761/eureka/
+  # instance:
+  #   hostname: localhost
+  #   prefer-ip-address: false
 
 #Actuator configurations
 management:
