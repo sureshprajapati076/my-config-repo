@@ -5,4 +5,4 @@ auth:
 spring:
   data:
     mongodb:
-      uri: mongodb+srv://api-test:api-test@cluster1.ssk95tn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1
+      uri: mongodb+srv://api-test:api-test@cluster1.ssk95tn.mongodb.net/test-users?retryWrites=true&w=majority&appName=Cluster1
